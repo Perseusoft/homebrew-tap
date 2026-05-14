@@ -5,21 +5,21 @@
 class OrionCli < Formula
   desc "OrionOps CLI — Specialized AI agents for code generation"
   homepage "https://orionops.tech"
-  version "0.1.8"
+  version "0.1.9"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Perseusoft/orion-releases/releases/download/v0.1.8/orion-cli_darwin_amd64.tar.gz"
-      sha256 "b3c91aa644ab6f858bbb9eb5445bdce7db1e5c643b3a8ef6e9eb93913580043b"
+      url "https://github.com/Perseusoft/orion-releases/releases/download/v0.1.9/orion-cli_darwin_amd64.tar.gz"
+      sha256 "3a07bf63081a73e7584103b5ff98120f6431bd24235c66fe7c75b3cee4c4f9b3"
 
       def install
         bin.install "orion"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Perseusoft/orion-releases/releases/download/v0.1.8/orion-cli_darwin_arm64.tar.gz"
-      sha256 "314558f92d8e70c4a99f5d1bf49b1b0070b98b94c52694f6806f34d123b3d19f"
+      url "https://github.com/Perseusoft/orion-releases/releases/download/v0.1.9/orion-cli_darwin_arm64.tar.gz"
+      sha256 "ab08c930783587ced9e0d7e9ac18bd0d1467b860f5717731dded8731fed3ad0f"
 
       def install
         bin.install "orion"
@@ -30,8 +30,8 @@ class OrionCli < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Perseusoft/orion-releases/releases/download/v0.1.8/orion-cli_linux_amd64.tar.gz"
-        sha256 "8269c5a6f7b7a7fca73ac3ebdf00539b4a6d1596adb8227fe20dd6788fd54645"
+        url "https://github.com/Perseusoft/orion-releases/releases/download/v0.1.9/orion-cli_linux_amd64.tar.gz"
+        sha256 "5f08f5273ff68e54d3cf934eb504bf72b6fbc5a0b4c1090511753d15f42faf6a"
 
         def install
           bin.install "orion"
@@ -40,8 +40,8 @@ class OrionCli < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Perseusoft/orion-releases/releases/download/v0.1.8/orion-cli_linux_arm64.tar.gz"
-        sha256 "3de47654a1981df619483f82b14e611b98e44ee9cdca4c691e4d0b9948b8af90"
+        url "https://github.com/Perseusoft/orion-releases/releases/download/v0.1.9/orion-cli_linux_arm64.tar.gz"
+        sha256 "6a7ce283bcd562c91c1d276e8c02626a21e048a78d5b7d65ce3ead8cc94b0560"
 
         def install
           bin.install "orion"
